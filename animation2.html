@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width;initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .box{
+                width:100px;
+                height:100px;
+                background-color: red;
+                position:relative;
+                animation-name: moveAndColor;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes moveAndColor{
+                0%{
+                    left:0px;
+                    background-color: fuchsia;
+                }
+                50%{
+                    left: 100px;
+                    background-color:blue;
+                   border-radius: 100%;
+
+                }
+                100%{
+                    left:200px;
+                    background-color: rgb(0, 100, 128);
+                    
+
+                }
+            }
+        </style>
+    </head>
+     <body>
+        <div class="box">
+            
+        </div>
+    </body>
+</html>
